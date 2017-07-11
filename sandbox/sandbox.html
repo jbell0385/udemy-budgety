@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Sandbox Testing</title>
+  <link rel="stylesheet" href="sbstyle.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="topContainer">
+
+      <!-- Selection for deposit or withdrawel -->
+      <select class="addSubtract" name="addSubtract">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+      </select>
+
+      <!-- Input field to describe the transaction -->
+      <input class="inp_field" id="inp_comment" type="text" name="inp_comment" value="">
+
+      <!-- Input field to enter value of transaction -->
+      <input class="inp_field" id="inp_value" type="text" name="inp_value" value="">
+
+      <!-- submit button to send information -->
+      <button id="btn_submit" type="button" name="btn_submit">Submit</button>
+
+    </div>
+
+    <div class="bottomContainer">
+
+      <div class="total">
+        <p>$0</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script type="text/javascript" src="sandbox.js"></script>
+</body>
+
+</html>

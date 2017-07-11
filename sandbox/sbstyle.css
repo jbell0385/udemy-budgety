@@ -1,0 +1,43 @@
+body {
+  font-family: Roboto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inp_field {
+  height: 25px;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #373d3f;
+  margin: 10px;
+  padding: 10px;
+}
+
+.entry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+}
+
+.total{
+  display: flex;
+  justify-content: center;
+}
