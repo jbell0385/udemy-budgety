@@ -115,13 +115,13 @@
         var html, newHtml, element;
 
         //Create HTML string with placeholder text
-        if (type === 'inc') {
+        if (type === 'inc' && document.querySelector(DOMstrings.inputType).value !== "" && document.querySelector(DOMstrings.inputValue).value !== "") {
           //The DOM element where we're going to append a new income element
           element = DOMstrings.incomeContainer;
           //The HTML structure of the new income element
           html = '<div class="item clearfix" id="income-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
 
-        } else if (type === 'exp') {
+        } else if (type === 'exp' && document.querySelector(DOMstrings.inputType).value !== "" && document.querySelector(DOMstrings.inputValue).value !== "") {
           //The DOM element where we're going to append a new expense element
           element = DOMstrings.expensesContainer;
           //The HTML structure of the new expense element
